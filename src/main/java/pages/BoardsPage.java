@@ -24,6 +24,15 @@ public class BoardsPage extends BasePage {
     WebElement inputBoardTyping;
     @FindBy(xpath = "//button[@data-testid='create-board-submit-button']")
     WebElement btnSubmitCreateBoard;
+    @FindBy(xpath = "//div[@class='B1uWdim9Jd0dJ9']")
+    WebElement btnAccount;
+    @FindBy(xpath = "//a//span[text()='Manage account']")
+    WebElement btnManageAccount;
+
+    public void openMyAccount(){
+        clickWait(btnAccount,3);
+        clickWait(btnManageAccount,3);
+    }
 
     public void createNewBoard(Board board){
         btnCreateNewBoard.click();
