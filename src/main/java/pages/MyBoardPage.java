@@ -33,7 +33,7 @@ public class MyBoardPage extends BasePage {
         clickWait(btnMenuDots, 5);
         clickWait(btnCloseBoard, 5);
         clickWait(btnCloseConfirm, 5);
-//        clickWait(btnMenuDots, 5);
+//        clickWait(btnMenuDots, 5); FAIL!
 //        clickWait(btnCloseBoard,5);
 //        clickWait(getBtnDeleteBoardConfirm,5);
     }
