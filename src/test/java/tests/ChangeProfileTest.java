@@ -13,7 +13,7 @@ import pages.LoginPage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChangeProfileText extends AppManager {
+public class ChangeProfileTest extends AppManager {
     BoardsPage boardsPage;
 
     @BeforeMethod
