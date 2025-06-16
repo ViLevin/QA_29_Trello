@@ -28,19 +28,24 @@ public class BoardsPage extends BasePage {
     WebElement btnAccount;
     @FindBy(xpath = "//a//span[text()='Manage account']")
     WebElement btnManageAccount;
+    @FindBy(xpath = "//span[@class='QMKgZFIlTLiEJN']")
+    WebElement popUpMessageBoardDelete;
 
-    public void openMyAccount(){
-        clickWait(btnAccount,3);
-        clickWait(btnManageAccount,3);
+
+
+
+    public void openMyAccount() {
+        clickWait(btnAccount, 3);
+        clickWait(btnManageAccount, 3);
     }
 
-    public void createNewBoard(Board board){
+    public void createNewBoard(Board board) {
         btnCreateNewBoard.click();
         inputBoardTyping.sendKeys(board.getBoardTitle());
         clickWait(btnSubmitCreateBoard, 8);
     }
 
-    public void createNewBoardNegative(Board board){
+    public void createNewBoardNegative(Board board) {
         btnCreateNewBoard.click();
         inputBoardTyping.sendKeys(board.getBoardTitle());
 
